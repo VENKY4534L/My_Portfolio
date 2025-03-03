@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkatesh Chintada - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            border-radius: 50%;
+            display:block;
+            margin: 40px auto;
+            border: 5px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: #555;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #777;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <script>
+        function openTab(tabName) {
+            let tabs = document.getElementsByClassName("tab-content");
+            for (let tab of tabs) {
+                tab.style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</head>
+<body onload="openTab('about')">
+    <header>
+        <h1>Venkatesh Chintada</h1>
+        <p>Computer Science and Engineering Student</p>
+        <img src="venky pic.jpg" height="200" width="200" alt="Profile Picture">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openTab('about')">About Me</a></li>
+                <li><a href="#" onclick="openTab('skills')">Skills</a></li>
+                <li><a href="#" onclick="openTab('projects')">Projects</a></li>
+                <li><a href="#" onclick="openTab('certifications')">Certifications</a></li>
+                <li><a href="#" onclick="openTab('education')">Education</a></li>
+                <li><a href="#" onclick="openTab('experience')">Work Experience</a></li>
+                <li><a href="#" onclick="openTab('achievements')">Achievements</a></li>
+                <li><a href="#" onclick="openTab('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <div id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>I'm a quick learner with patience, strong management, and problem-solving skills. I thrive in collaborative environments, working efficiently with teams while staying organized to handle tasks effectively. My adaptability enables me to learn and implement new technologies swiftly. I leverage AI tools to automate repetitive tasks, enhance efficiency, and make well-informed decisions. My ability to analyze challenges critically and devise strategic solutions helps in optimizing workflows and improving overall productivity.</p>
+    </div>
+    <div id="skills" class="tab-content">
+        <h2>Skills</h2>
+        <li>Communication</li>
+        <li>Python & DSA (Basic)</li>
+        <li>Java</li>
+        <li> HTML, CSS, JS (Frontend Development)</li>
+        <li>Problem Solving</li>
+        <li>DBMS</li> 
+        <li> GitHub</li>
+        <li>System & Network Administration</li>
+    </div>
+    <div id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <p><b>My College Website:</b><br> Developed a college website using HTML and CSS with a clean and user-friendly design, including key sections like the homepage, about us, courses, admissions, and contact details.</p>
+        <p><b>Event Management using Python:</b> <br>Developed a website with a structured and easy-to-navigate layout.</p>
+        <p><b>Community Service Project:</b><br> Focused on tourism awareness, sustainable tourism, and local business support.</p>
+    </div>
+    <div id="certifications" class="tab-content">
+        <h2>Certifications</h2>
+        <ul>
+        <li>Salesforce AI Associate (Global Certification)</li>
+        <li>Salesforce Developer Trailmix</li>
+        <li> NPTEL: Java</li>
+        <li>Google Cloud Computing Foundations</li>
+        <li> Wadhwani Foundation - Employability Skills - JobReady</li>
+        <li> EdX: Java, Internet of Things</li>
+        </ul>
+    </div>
+    <div id="education" class="tab-content">
+        <h2>Education</h2>
+        <p>Bachelor of Technology in Computer Science and Engineering, Pragati Engineering College, Kakinada, India - 8.02 CGPA, 2026 Passout</p>
+    </div>
+    <div id="experience" class="tab-content">
+        <h2>Work Experience</h2>
+        <p><b>Robotic Process Automation (RPA) Intern - AICTE (Dec 2022 - Feb 2023)</b>:<br> Designed and implemented RPA bots using UiPath, Automation Anywhere, and Blue Prism.</p>
+        <p><b>AWS Data Engineering Intern (July 2024 - Sep 2024)</b>:<br> Optimized data processing, implemented ETL pipelines, and ensured data quality.</p>
+    </div>
+    <div id="achievements" class="tab-content">
+        <h2>Achievements</h2>
+        <b>Microsoft</b>: System & Network Administrator, International Level Student Workshop - 2K24 (Data Science using Python - Brainovision Solutions India Pvt. Ltd.)
+    </div>
+    <div id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>Email: venkateshchintada103@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/venkatesh-chintada-aab10625a/" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/VENKY4534L" target="_blank">GitHub</a></p>
+        <p><a href="https://www.hackerrank.com/profile/venkateshchinta8" target="_blank">HackerRank</a></p>
+    </div>
+</body>
+</html>
